@@ -1,0 +1,137 @@
+html {
+  font-size: 18px; }
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: helvetica, arial;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 160%; }
+
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.signup {
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'Raleway', sans-serif; }
+  .signup p {
+    text-align: center;
+    margin: 20px 0; }
+  .signup input[type=text] {
+    width: calc(70% - 10px);
+    padding: 10px;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px 0 0 5px;
+    border: 0; }
+  .signup .submit {
+    background: #FC7850;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    width: calc(30% - 20px);
+    float: left;
+    padding: 10px;
+    height: 39px;
+    border-radius: 0 5px 5px 0; }
+    .signup .submit:hover {
+      background: #fb511e;
+      cursor: pointer; }
+
+.video {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .video::after {
+    content: '';
+    background: url("../img/overlay.svg") center center no-repeat;
+    background-size: 100% 100%;
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    display: block; }
+
+.count_down {
+  display: block;
+  width: 50%;
+  margin: 0 auto 50px auto;
+  height: auto;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif; }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .video {
+    max-width: 700px; } }
+
+@media only screen and (max-width: 767px) {
+  .count_down {
+    width: 100%; }
+  .signup {
+    width: 80%; } }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+p {
+  font-family: 'Raleway', sans-serif; }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, img, ins, kbd, q, samp,
+small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+img {
+  border: 0 none;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  vertical-align: middle; }
+
+.clearFloat {
+  clear: both; }
+
+.wrapper:before,
+.wrapper:after,
+.box:before,
+.box:after {
+  content: " ";
+  display: table; }
+
+.wrapper:after,
+.box:after {
+  clear: both; }

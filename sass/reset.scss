@@ -1,0 +1,55 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, img, ins, kbd, q, samp,
+small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+em {
+font-style: italic;
+}
+
+strong {
+font-weight: bold;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+img {
+border: 0 none;
+max-width: 100%;
+height: auto;
+width: 100%;
+vertical-align: middle;
+}
+
+.clearFloat {
+  clear: both;
+}
+
+.wrapper:before,
+.wrapper:after,
+.box:before,
+.box:after {
+  content: " ";
+  display: table;
+}
+
+.wrapper:after,
+.box:after {
+  clear: both;
+}
