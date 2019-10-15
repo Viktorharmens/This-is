@@ -23,16 +23,18 @@ body {
   .signup p {
     text-align: center;
     margin: 20px 0; }
-  .signup input[type=text] {
+  .signup input[type=email] {
     width: calc(70% - 10px);
     padding: 10px;
     float: left;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     border-radius: 5px 0 0 5px;
-    border: 0; }
+    border: 0;
+    margin: 0;
+    -webkit-appearance: none; }
   .signup .submit {
-    background: #FC7850;
+    background-color: #FC7850;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     color: white;
@@ -41,36 +43,51 @@ body {
     float: left;
     padding: 10px;
     height: 39px;
-    border-radius: 0 5px 5px 0; }
+    border-radius: 0 5px 5px 0;
+    -webkit-appearance: none; }
     .signup .submit:hover {
       background: #fb511e;
       cursor: pointer; }
+  .signup .form::after {
+    display: block;
+    content: "";
+    clear: both; }
 
 .video {
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  height: auto;
   overflow: hidden; }
-  .video::after {
-    content: '';
-    background: url("../img/overlay.svg") center center no-repeat;
+  .video__overlay {
+    background: url("../img/overlay-png.png") center center no-repeat;
     background-size: 100% 100%;
     width: 102%;
     height: 102%;
     position: absolute;
     top: -1%;
     left: -1%;
-    display: block; }
+    display: block;
+    z-index: 100; }
 
 .count_down {
   display: block;
   width: 50%;
-  margin: 0 auto 50px auto;
+  margin: -50px auto 50px auto;
   height: auto;
   text-align: center;
   font-size: 3rem;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  z-index: 100; }
+
+.message {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  font-family: 'Raleway', sans-serif; }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .video {

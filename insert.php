@@ -10,6 +10,14 @@ if($link === false){
  
 // Escape user inputs for security
 $email = mysqli_real_escape_string($link, $_REQUEST['email']);
+
+// Validate email 
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) { 
+    echo(""); 
+}  
+else { 
+    die("Email is not a valid email address"); 
+} 
  
 // Attempt insert query execution
 $sql = "INSERT INTO Singnup (email) VALUES ('$email')";
